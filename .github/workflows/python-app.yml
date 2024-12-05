@@ -26,3 +26,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+    - name: Create .env
+      run: |
+        cp ./authorizer/.env.test ./authorizer/.env
