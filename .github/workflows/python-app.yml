@@ -29,3 +29,6 @@ jobs:
     - name: Create .env
       run: |
         cp ./authorizer/.env.test ./authorizer/.env
+    - name: LS
+      run: |
+        ls -la ./authorizer
