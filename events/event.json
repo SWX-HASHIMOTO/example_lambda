@@ -1,0 +1,19 @@
+{
+  "body": "{\"toilet_id\": \"1\", \"cat_id\": \"2\", \"start_time\": \"2024-09-01T08:30:00\", \"end_time\": \"2024-09-01T08:45:00\"}",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourcePath": "/data",
+    "httpMethod": "POST",
+    "path": "/dev/data",
+    "stage": "dev",
+    "identity": {
+      "sourceIp": "127.0.0.1"
+    }
+  }
+}
