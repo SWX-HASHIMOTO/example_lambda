@@ -52,6 +52,6 @@ jobs:
           ls -R
       - name: Run tests with pytest
         env:
-          PYTHONPATH: ${{ github.workspace }}
+          PYTHONPATH: "/home/runner/work/example_lambda"
         run: |
           pytest tests/unit
