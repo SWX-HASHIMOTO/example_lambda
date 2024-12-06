@@ -51,7 +51,5 @@ jobs:
         run: |
           ls -R
       - name: Run tests with pytest
-        env:
-          PYTHONPATH: "/home/runner/work/example_lambda"
         run: |
           pytest tests/unit
