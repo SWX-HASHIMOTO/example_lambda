@@ -50,3 +50,8 @@ jobs:
       - name: List project files
         run: |
           ls -R
+      - name: Run tests with pytest
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          pytest
