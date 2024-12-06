@@ -50,6 +50,8 @@ jobs:
       - name: List project files
         run: |
           ls -R
+      - name: Change to project root
+        run: cd /home/runner/work/example_lambda
       - name: Run tests with pytest
         run: |
           pytest tests/unit
