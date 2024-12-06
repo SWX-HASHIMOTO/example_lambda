@@ -54,4 +54,4 @@ jobs:
         run: cd /home/runner/work/example_lambda
       - name: Run tests with pytest
         run: |
-          pytest tests/unit
+          pytest --rootdir=/home/runner/work/example_lambda
