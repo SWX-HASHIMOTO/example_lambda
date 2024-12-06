@@ -49,4 +49,4 @@ jobs:
           export PYTHONPATH="./layers/python:$PYTHONPATH"
       - name: Run tests with pytest
         run: |
-          pytest ./tests/unit
+          pytest
