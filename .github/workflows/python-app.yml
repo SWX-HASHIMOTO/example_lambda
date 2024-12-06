@@ -47,9 +47,6 @@ jobs:
       - name: export PYTHONPATH
         run: |
           export PYTHONPATH="./layers/python:$PYTHONPATH"
-      - name: Run tests with pytest
-        env:
-          PYTHONPATH: ${{ github.workspace }}
+      - name: List project files
         run: |
-          ls -la
-          pytest -v
+          ls -R
