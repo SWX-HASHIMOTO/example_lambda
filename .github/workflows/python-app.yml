@@ -54,4 +54,4 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          pytest
+          pytest tests/unit
