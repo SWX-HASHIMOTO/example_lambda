@@ -1,0 +1,41 @@
+[tool.ruff]
+line-length = 119
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+combine-as-imports = true
+
+[tool.ruff.lint.flake8-bandit]
+check-typed-exception = true
+
+[tool.pytest.ini_options]
+addopts = "-s -v --cov=app --cov-branch --cov-report xml --cov-report html"
+testpaths = [
+  "tests"
+]
+pythonpath = [
+  "send_s3",
+  "layers"
+]
+markers = [
+    "success: Success cases.",
+    "validate_ng: Test cases for validation scenarios expected to fail.",
+    "exception: Assert Exception",
+    "anything_missing: Missing Anything",
+    "get_signing_key_exception: Exception"
+]
